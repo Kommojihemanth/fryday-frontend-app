@@ -6,15 +6,14 @@
     </div>
    <div>
     <mat-nav-list class="sidenav">
-      <mat-list-item class="flex-container sidenav-list" *ngFor="let side of sidenavList">
-        <a matListItemTitle class="sidenav-items" [routerLink]="side.link">
-          <img src="assets/{{side.iconName}}.svg" class="sidenavimg" />
+      <mat-list-item class="flex-container sidenav-list" *ngFor="let side of sidenavList" [routerLink]="side.link">
+        <a matListItemTitle class="sidenav-items">
+          <img src="assets/images/{{side.iconName}}.png" class="sidenavimg" />
           <span class="sidenav-font">{{side.title}}</span>
         </a>
       </mat-list-item>
     </mat-nav-list>
    </div>
-
   </mat-sidenav>
 
   <mat-sidenav-content>
