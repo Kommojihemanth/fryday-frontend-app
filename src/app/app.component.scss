@@ -1,3 +1,90 @@
+.custom-sidenav {
+  width: 12.5rem;
+  background: #fafafa;
+  padding: 1rem;
+}
+
+.custom-sidenav-content {
+  background-color: #ffffff;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+.sidenav-toggle-container {
+  position: absolute;
+  display: inline-flex;
+  left: 185px;
+  top: 4.8rem;
+  z-index: 999;
+  background: #e2e7e2;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+md-sidenav {
+  width: 250px;
+
+  md-icon {
+    padding-right: 20px !important;
+  }
+
+  &.mat-sidenav-closed {
+    transform: translate3d(0, 0, 0) !important;
+    visibility: visible !important;
+    min-width: 64px !important;
+    width: 64px !important;
+
+    & ::ng-deep .mat-sidenav-content {
+      margin-left: 64px !important;
+    }
+  }
+}
+.create-user-main-container{
+  padding:4rem 0.5rem ;
+}
+.sidenavimg{
+  width:1.5rem;
+  height:1.5rem;
+}
+
+.sidenav{
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+}
+.flex-container {
+display: flex;
+gap: 20px; /* Adjust the gap as needed */
+}
+.sidenav-font{
+margin-left: 0.5rem;
+color: #808080;
+font-family: Manrope;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+.sidenav-text{
+margin-left:  0.5rem;
+color: #4C4C4C;
+font-family: Manrope;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+.sidenav-items{
+display: flex;
+align-items: center;
+}
+.sidenav-list:hover{
+border-radius: 4px;
+background: yellowgreen;
+}
+
 .fryday-toolbar{
   background-color: green;
 }
