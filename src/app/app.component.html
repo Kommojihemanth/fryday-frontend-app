@@ -1,1 +1,38 @@
-hello master
+<!-- <app-campaign-form></app-campaign-form> -->
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+   
+    <div >
+      <img class="company-logo--image" src="assets/images/company-logo.png" alt="logo">
+    </div>
+
+    <mat-nav-list class="sidenav">
+      <mat-list-item class="flex-container sidenav-list" routerLink={{side.link}}  *ngFor="let side of sidenavList">
+        <a matListItemTitle class="sidenav-items" ><img src="assets/{{side.iconName}}.svg" class="sidenavimg"/><a class="sidenav-font">{{side.title}}</a></a>
+      </mat-list-item>
+    </mat-nav-list>
+     
+
+
+
+     
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="fryday-toolbar">
+      <div style="display: flex; align-items: center">
+        <button mat-icon-button (click)="sidenav.toggle()" class="profile-btn">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span style="font-weight: 600;"><a style="color: yellow;">FRY</a>DAY</span>
+      </div>
+      <!-- <app-profile-button
+        [imageUrl]="'assets/images/admin.jpg'"
+        [name]="'Admin'"
+        [subtitle]="'Hemanth K'"
+      >
+      </app-profile-button> -->
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
