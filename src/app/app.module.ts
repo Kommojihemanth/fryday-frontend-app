@@ -11,13 +11,15 @@ import { FranchiseComponent } from './features/components/franchise/franchise.co
 import { ContactComponent } from './features/components/contact/contact.component';
 import { CoreModule } from './core/core.module';
 import { DashboardModule } from './features/components/dashboard/dashboard.module';
+import { AboutUsComponent } from './features/components/about-us/about-us.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuComponent,
     FranchiseComponent,
-    ContactComponent
+    ContactComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
