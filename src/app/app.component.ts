@@ -24,9 +24,15 @@ export class AppComponent {
     }, 
     {
       name:"",
-      title:"Franchise",
-      iconName:"franchise",
-      link:"franchise"
+      title:"Business with us",
+      iconName:"business",
+      link:"business"
+    },
+    {
+      name:"",
+      title:"About us",
+      iconName:"about",
+      link:"about"
     },
     {
       name:"",
