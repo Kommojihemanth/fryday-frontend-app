@@ -24,12 +24,11 @@
         </button>
         <span style="font-family: 'Anton', sans-serif;"><a style="color: #FFB366;">FRY</a>DAY</span>
       </div>
-      <!-- <app-profile-button
-        [imageUrl]="'assets/images/admin.jpg'"
-        [name]="'Admin'"
-        [subtitle]="'Hemanth K'"
-      >
-      </app-profile-button> -->
+<!-- Adding person icon and name to the top right -->
+      <div style="flex-grow: 1; text-align: right;">
+        <mat-icon>person</mat-icon>
+        <span style="margin-left: 8px;">Chandu G</span>
+      </div>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
