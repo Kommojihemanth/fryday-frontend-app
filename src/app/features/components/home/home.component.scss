@@ -1,0 +1,32 @@
+.background {
+    background: linear-gradient(to right, #6D001B 5%, #B2472B 40%);
+    /* Add any additional styles you want */
+    /* For example, you can set width and height to fill the entire page */ 
+    height: 100%;
+}
+.home-main--container{
+  display: flex;
+  gap: 1rem;
+  padding-left: 10rem;
+}
+.home-main--title{
+  font-family: "Anton", sans-serif;
+    font-size: 48px;
+    color: #FFB366;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.3px;
+}
+.home-content--subtitle{
+  font-family: "Anton", sans-serif;
+  font-size: 16px;
+  color: #FFB366;
+}
+.home-content--about{
+  font-size: 14px;
+  font-weight: 580;
+  color: #FFB366
+}
+.home-content-desription{
+  font-size: 12px;
+  color: #FFB366
+}
