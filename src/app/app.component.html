@@ -1,30 +1,28 @@
-<!-- <app-campaign-form></app-campaign-form> -->
-<mat-sidenav-container>
-  <mat-sidenav #sidenav mode="side" opened>
-   
-    <div >
-      <img class="company-logo--image" src="assets/images/company-logo.png" alt="logo">
+<mat-sidenav-container style="height: 100vh;">
+  <mat-sidenav #sidenav mode="side" class="custom-sidenav" opened>
+    <div style="padding: 1rem;display: flex;">
+      <!-- <img class="company-logo--image" src="assets/images/company-logo.png" alt="logo"> -->
+      <span style="font-family: 'Anton', sans-serif;margin-right: 0.5rem; background-color:#B2472B ;padding: 0.5rem 2rem;border-radius: 0.2rem;"><a style="color: #FFB366;">FRY</a><a style="color: #FFFFFF">DAY</a></span>
     </div>
-
+   <div>
     <mat-nav-list class="sidenav">
-      <mat-list-item class="flex-container sidenav-list" routerLink={{side.link}}  *ngFor="let side of sidenavList">
-        <a matListItemTitle class="sidenav-items" ><img src="assets/{{side.iconName}}.svg" class="sidenavimg"/><a class="sidenav-font">{{side.title}}</a></a>
+      <mat-list-item class="flex-container sidenav-list" *ngFor="let side of sidenavList" [routerLink]="side.link">
+        <a matListItemTitle class="sidenav-items">
+          <img src="assets/images/{{side.iconName}}.png" class="sidenavimg" />
+          <span class="sidenav-font">{{side.title}}</span>
+        </a>
       </mat-list-item>
     </mat-nav-list>
-     
-
-
-
-     
+   </div>
   </mat-sidenav>
 
   <mat-sidenav-content>
     <mat-toolbar color="primary" class="fryday-toolbar">
-      <div style="display: flex; align-items: center">
+      <div style="display: flex;align-items: center">
         <button mat-icon-button (click)="sidenav.toggle()" class="profile-btn">
           <mat-icon>menu</mat-icon>
         </button>
-        <span style="font-weight: 600;"><a style="color: yellow;">FRY</a>DAY</span>
+        <span style="font-family: 'Anton', sans-serif;"><a style="color: #FFB366;">FRY</a>DAY</span>
       </div>
       <!-- <app-profile-button
         [imageUrl]="'assets/images/admin.jpg'"

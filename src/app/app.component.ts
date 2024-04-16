@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-interface SubNavState {
-  home: boolean;
-  menu: boolean;
-  franchise: boolean;
-  contact : boolean;
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,30 +8,11 @@ interface SubNavState {
 })
 export class AppComponent {
   title = 'fryday';
-  subNavState: SubNavState = {
-    home: false,
-    menu: false,
-    franchise: false,
-    contact:false
-  };
-
   constructor(private router: Router) {}
-
-  toggleSubNav(navName: keyof SubNavState): void {
-    this.subNavState[navName] = !this.subNavState[navName];
-    if (this.subNavState[navName]) {
-      this.router.navigate([`/${navName}`]);
-    }
-  }
-
-  isSubNavOpen(navName: keyof SubNavState): boolean {
-    return this.subNavState[navName];
-  }
-
   sidenavList=[
     {
       name:"",
-      title:"Home",
+      title:"Home Page",
       iconName:"home",
       link:"home"
     },
@@ -49,13 +24,19 @@ export class AppComponent {
     }, 
     {
       name:"",
-      title:"Franchise",
-      iconName:"franchise",
-      link:"franchise"
+      title:"Business with us",
+      iconName:"business",
+      link:"business"
     },
     {
       name:"",
-      title:"contact",
+      title:"About us",
+      iconName:"about",
+      link:"about"
+    },
+    {
+      name:"",
+      title:"Contact us",
       iconName:"contact",
       link:"contact"
     }
